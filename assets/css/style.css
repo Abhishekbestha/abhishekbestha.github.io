@@ -1884,11 +1884,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Skill Icon Styles */
 .skill-icons {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   justify-items: center;
   align-items: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .skill-icon {
@@ -1901,4 +1901,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 .skill-icon:hover {
   filter: grayscale(0%);
   transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  .skill-icons {
+    grid-template-columns: repeat(8, 1fr); /* Adjust to show more icons per row */
+    gap: 30px; /* Increase spacing between icons for larger screens */
+  }
+
+  .skill-icon {
+    width: 60px; /* Increase size of icons */
+    height: 60px;
+  }
 }
