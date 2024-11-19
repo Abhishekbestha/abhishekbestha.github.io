@@ -1916,3 +1916,73 @@ textarea.form-input::-webkit-resizer { display: none; }
     height: 60px;
   }
 }
+
+.title-social-container, .modal-title-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+/* Title styles */
+.testimonials-item-title, .modal-title {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* Social list styles */
+.social-list {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 15px;
+}
+
+/* Social link styles */
+.social-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-link i {
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Platform-specific colors */
+.social-link i.fa-linkedin {
+  color: #0077B5;
+}
+
+.social-link i.fa-twitter {
+  color: #1DA1F2;
+}
+
+.social-link i.fa-github {
+  color: #333;
+}
+
+/* Hover effects */
+.social-link:hover i {
+  opacity: 0.8;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .title-social-container, .modal-title-container {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .social-list {
+    margin-left: 0;
+  }
+}
