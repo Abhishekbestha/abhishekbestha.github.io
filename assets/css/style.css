@@ -593,7 +593,9 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.testimonials-item-title { 
+  margin-bottom: 7px; 
+}
 
 .testimonials-text {
   color: var(--light-gray);
@@ -1695,7 +1697,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-
   /**
    * NAVBAR
    */
@@ -1890,7 +1891,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   gap: 20px;
   justify-items: center;
   align-items: center;
-  /* margin-top: 20px; */
 }
 
 .skill-icon {
@@ -1907,12 +1907,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 1024px) {
   .skill-icons {
-    grid-template-columns: repeat(8, 1fr); /* Adjust to show more icons per row */
-    gap: 30px; /* Increase spacing between icons for larger screens */
+    grid-template-columns: repeat(8, 1fr);
+    gap: 30px;
   }
 
   .skill-icon {
-    width: 60px; /* Increase size of icons */
+    width: 60px;
     height: 60px;
   }
 }
@@ -1921,12 +1921,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 10px;
 }
 
 /* Title styles */
 .testimonials-item-title, .modal-title {
-  margin: 0;
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
