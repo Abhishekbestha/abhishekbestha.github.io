@@ -163,4 +163,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 setInterval(() => {
   let gif = document.getElementById('gifImage');
   gif.src = "./assets/images/Knowledge.gif?t=" + new Date().getTime(); // Append timestamp to force reload
-}, 2000);
+}, 5000);
