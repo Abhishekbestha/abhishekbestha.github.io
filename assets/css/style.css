@@ -1990,7 +1990,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 } */
 
 .projimgs {
-  height: 175px; /* Default height */
+  height: 175px !important; /* Default height */
   width: auto; /* Maintain aspect ratio */
   max-width: 100%; /* Prevent overflow */
 }
