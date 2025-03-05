@@ -1984,3 +1984,34 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin-left: 0;
   }
 }
+
+/* .projimgs{
+  height: 175px;
+} */
+
+.projimgs {
+  height: 175px; /* Default height */
+  width: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+}
+
+/* For tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .projimgs {
+    height: 150px; /* Adjust for smaller screens */
+  }
+}
+
+/* For mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+  .projimgs {
+    height: 120px; /* Reduce height for smaller screens */
+  }
+}
+
+/* For very small devices (360px and below) */
+@media screen and (max-width: 360px) {
+  .projimgs {
+    height: 100px; /* Further reduce height */
+  }
+}
