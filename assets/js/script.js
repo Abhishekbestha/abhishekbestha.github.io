@@ -167,6 +167,6 @@ setInterval(() => {
 
   let timestamp = new Date().getTime();
   gif1.src = "./assets/images/Knowledge.gif?t=" + timestamp;
-  gif2.src = "./assets/images/Knowledge.gif?t=" + timestamp;
-  gif3.src = "./assets/images/Knowledge.gif?t=" + timestamp;
+  gif2.src = "./assets/images/Portfolio.gif?t=" + timestamp;
+  gif3.src = "./assets/images/NotionBlog.gif?t=" + timestamp;
 }, 5000);
