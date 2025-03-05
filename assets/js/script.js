@@ -161,6 +161,12 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 // gif reload
 setInterval(() => {
-  let gif = document.getElementById('gifImage');
-  gif.src = "./assets/images/Knowledge.gif?t=" + new Date().getTime(); // Append timestamp to force reload
+  let gif1 = document.getElementById('gifImage1');
+  let gif2 = document.getElementById('gifImage2');
+  let gif3 = document.getElementById('gifImage3');
+
+  let timestamp = new Date().getTime();
+  gif1.src = "./assets/images/Knowledge.gif?t=" + timestamp;
+  gif2.src = "./assets/images/Knowledge.gif?t=" + timestamp;
+  gif3.src = "./assets/images/Knowledge.gif?t=" + timestamp;
 }, 5000);
