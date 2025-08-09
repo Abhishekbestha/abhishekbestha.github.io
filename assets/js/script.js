@@ -14,7 +14,42 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn-2]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
+function initializeTypewriter() {
+    const words = ["Senior Software Developer"];
+    let wordIndex = 0,
+      charIndex = 0,
+      isDeleting = false;
+    const typewriter = document.getElementById("typewriter");
 
+    function type() {
+      const currentWord = words[wordIndex];
+
+      // Update text content first to ensure correct character display
+      if (isDeleting) {
+        typewriter.textContent = currentWord.substring(0, charIndex);
+        charIndex--;
+      } else {
+        typewriter.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      let delay = isDeleting ? 50 : 100;
+
+      // Check conditions after updating text and charIndex
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        delay = 1100;
+      } else if (isDeleting && charIndex < 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        charIndex = 0;
+        delay = 250;
+      }
+
+      setTimeout(type, delay);
+    }
+    type();
+  }
 
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
@@ -170,3 +205,7 @@ setInterval(() => {
   gif2.src = "./assets/images/Portfolio.gif?t=" + timestamp;
   gif3.src = "./assets/images/NotionBlog.gif?t=" + timestamp;
 }, 5000);
+
+document.addEventListener("DOMContentLoaded", () => {
+// initializeTypewriter();
+});

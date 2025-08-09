@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B S Abhishek</title>
 
-    <!--- favicon -->
-    <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" /> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>B S Abhishek</title>
 
-    <!--- custom css link -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+  <!--- favicon -->
+  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" /> -->
 
-    <!--- google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-  </head>
+  <!--- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <body>
-    <!--- #MAIN -->
+  <!--- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
 
-    <main>
-      <!--- #SIDEBAR -->
+<body>
+  <!--- #MAIN -->
 
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info" data-sidebar-btn-2>
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/My-pic.png"
-              alt="B S Abhishek"
-              width="65"
-            />
-          </figure>
+  <main>
+    <!--- #SIDEBAR -->
 
-          <div class="info-content">
-            <h1 class="name" title="B S Abhishek">B S Abhishek</h1>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info" data-sidebar-btn-2>
+        <figure class="avatar-box">
+          <img src="./assets/images/My-pic.png" alt="B S Abhishek" width="65" />
+        </figure>
 
-            <p class="title">Software Developer</p>
-          </div>
+        <div class="info-content">
+          <h1 class="name" title="B S Abhishek">B S Abhishek</h1>
 
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
+          <p class="title" id="typewriter">Senior Software Developer</p>
         </div>
-        
-<!--         <button class="info_more-btn" data-sidebar-btn>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <!--         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
@@ -77,7 +68,7 @@
             </div>
           </li>
 
-<!--           <li class="contact-item">
+          <!--           <li class="contact-item">
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
@@ -109,7 +100,7 @@
             <div class="contact-info">
               <p class="contact-title">Location</p>
 
-              <address>Kategenahalli, Bengaluru, Karnataka</address>
+              <address>Bagalur, Bengaluru, Karnataka</address>
             </div>
           </li>
         </ul>
@@ -124,7 +115,7 @@
           </li>
 
           <li class="social-item">
-            <a href="https://www.linkedin.com/in/b-s-abhishek-5a696916b"  target="_blank" class="social-link">
+            <a href="https://www.linkedin.com/in/b-s-abhishek-5a696916b" target="_blank" class="social-link">
               <ion-icon name="logo-LinkedIn"></ion-icon>
             </a>
           </li>
@@ -138,125 +129,130 @@
       </div>
     </aside>
 
-      <div class="main-content">
-        <!--- #NAVBAR -->
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+    <div class="main-content">
+      <!--- #NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>skills</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--- #ABOUT -->
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a skilled Java developer with expertise in building scalable,
+            efficient, and robust applications. Adept at working with
+            cross-functional teams to gather requirements and translate them
+            into technical solutions. Extensive experience with Java-based web
+            development, RESTful API design, and monolithic architecture.
+            Passionate about staying updated with the latest industry trends
+            and best practices.
+          </p>
+        </section>
+
+        <!--- service -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
             </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Development</h4>
+
+                <p class="service-item-text">
+                  Cutting-edge, scalable, and robust APIs crafted with professional excellence.
+                </p>
+              </div>
             </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Projects</button>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">SDK Development</h4>
+
+                <p class="service-item-text">
+                  High-quality, reliable Java SDKs built for seamless integration.
+                </p>
+              </div>
             </li>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Blog</button>
-            </li>
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40" />
+              </div>
 
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">R&D</h4>
+
+                <p class="service-item-text">
+                  Innovative and impactful solutions driven by focused research and development.
+                </p>
+              </div>
             </li>
           </ul>
-        </nav>
+        </section>
 
-        <!--- #ABOUT -->
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
+        <section class="github-contribution">
+          <li class="service-item" style="background: var(--border-gradient-onyx);">
+            <div class="title-wrapper">
+              <h3 class="h3 service-title">GitHub Contributions</h3>
+              <img class="github-chart" src="http://ghchart.rshah.org/abhishekbestha" alt="Github chart">
+            </div>
+          </li>
+        </section>
 
-          <section class="about-text">
-            <p>
-              I'm a skilled Java developer with expertise in building scalable,
-              efficient, and robust applications. Adept at working with
-              cross-functional teams to gather requirements and translate them
-              into technical solutions. Extensive experience with Java-based web
-              development, RESTful API design, and monolithic architecture.
-              Passionate about staying updated with the latest industry trends
-              and best practices.
-            </p>
-          </section>
+        <!--- testimonials -->
 
-          <!--- service -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40"/>
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    High-quality development of sites at the professional level.
-                  </p>
-                </div>
-              </li>
-              
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img src="./assets/images/icon-design.svg" alt="design icon" width="40"/>
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">API Development</h4>
-
-                  <p class="service-item-text">
-                    Cutting-edge, scalable, and robust APIs crafted with professional excellence.
-                  </p>
-                </div>
-              </li>
-              
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">SDK Development</h4>
-
-                  <p class="service-item-text">
-                    High-quality, reliable Java SDKs built for seamless integration.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-photo.svg"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">R&D</h4>
-
-                  <p class="service-item-text">
-                    Innovative and impactful solutions driven by focused research and development.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!--- testimonials -->
-
-          <section class="testimonials">
+        <!-- <section class="testimonials">
             <h3 class="h3 testimonials-title">Testimonials</h3>
 
             <ul class="testimonials-list has-scrollbar">
@@ -296,9 +292,9 @@
                     </p>
                   </div>
                 </div>
-              </li>
+              </li> -->
 
-<!--               <li class="testimonials-item">
+        <!--               <li class="testimonials-item">
                 <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
@@ -329,7 +325,7 @@
                 </div>
               </li> -->
 
-<!--               <li class="testimonials-item">
+        <!--               <li class="testimonials-item">
                 <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
@@ -360,7 +356,7 @@
                 </div>
               </li> -->
 
-<!--               <li class="testimonials-item">
+        <!--               <li class="testimonials-item">
                 <div class="content-card" data-testimonials-item>
                   <figure class="testimonials-avatar-box">
                     <img
@@ -390,128 +386,230 @@
                   </div>
                 </div>
               </li> -->
-            </ul>
+        </ul>
+        </section>
+
+        <!--- testimonials modal -->
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Mayur Caariappa" width="80" data-modal-img />
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <div class="modal-title-container">
+                <div class="modal-title-conatiner-inline" style="display: flex">
+                  <h4 class="h3 modal-title" data-modal-title>
+                    Mayur Caariappa
+                  </h4>
+                  <ul class="social-list" style="margin-left: 80px">
+                    <li class="social-item">
+                      <a href="https://mayurcaariappa.github.io/" target="_blank" class="social-link"
+                        rel="noopener noreferrer" aria-label="Portfolio">
+                        <i class="fas fa-globe"></i>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a href="https://www.linkedin.com/in/mayurcaariappa/" target="_blank" class="social-link"
+                        rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a href="https://x.com/mayurcaariappa" target="_blank" class="social-link"
+                        rel="noopener noreferrer" aria-label="Visit X profile">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="social-item">
+                      <a href="https://github.com/mayurcaariappa" target="_blank" class="social-link"
+                        rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <time datetime="2021-06-14">19 November, 2024</time>
+              <div data-modal-text>
+                <p>
+                  I've had the pleasure of working with Abhishek BS at
+                  eMudhra, and I can confidently say he is an exceptional
+                  <b>Java</b> and <b>Spring Boot</b> developer. His ability to
+                  write clean, efficient code and solve complex problems with
+                  ease is truly impressive. He's a reliable team player who
+                  consistently delivers high-quality results. Any team would
+                  be lucky to have him!
+                </p>
+              </div>
+            </div>
           </section>
+        </div>
 
-          <!--- testimonials modal -->
+      </article>
 
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
+      <!--- #RESUME -->
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume
+            <a href="assets/docs/AbhishekBS_Resume.pdf" download="Resume_AbhishekBS" class="download-link">
+              <span class="">
+                <img id="download-resume-btn" src="assets/images/resume.png" alt="Download Resume" width="50"
+                  height="50" class="download-icon"
+                  style="animation: 1s ease-in-out 0s 4 normal forwards running pulse;">
+              </span>
+            </a>
+          </h2>
+        </header>
 
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
 
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Mayur Caariappa"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <div class="modal-title-container">
-                  <div
-                    class="modal-title-conatiner-inline"
-                    style="display: flex"
-                  >
-                    <h4 class="h3 modal-title" data-modal-title>
-                      Mayur Caariappa
-                    </h4>
-                    <ul class="social-list" style="margin-left: 80px">
-                      <li class="social-item">
-                        <a
-                          href="https://mayurcaariappa.github.io/"
-                          target="_blank"
-                          class="social-link"
-                          rel="noopener noreferrer"
-                          aria-label="Portfolio"
-                        >
-                          <i class="fas fa-globe"></i>
-                        </a>
-                      </li>
-                      <li class="social-item">
-                        <a
-                          href="https://www.linkedin.com/in/mayurcaariappa/"
-                          target="_blank"
-                          class="social-link"
-                          rel="noopener noreferrer"
-                          aria-label="Visit LinkedIn profile"
-                        >
-                          <i class="fab fa-linkedin"></i>
-                        </a>
-                      </li>
-                      <li class="social-item">
-                        <a
-                          href="https://x.com/mayurcaariappa"
-                          target="_blank"
-                          class="social-link"
-                          rel="noopener noreferrer"
-                          aria-label="Visit X profile"
-                        >
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li class="social-item">
-                        <a
-                          href="https://github.com/mayurcaariappa"
-                          target="_blank"
-                          class="social-link"
-                          rel="noopener noreferrer"
-                          aria-label="Visit GitHub profile"
-                        >
-                          <i class="fab fa-github"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <time datetime="2021-06-14">19 November, 2024</time>
-                <div data-modal-text>
-                  <p>
-                    I've had the pleasure of working with Abhishek BS at
-                    eMudhra, and I can confidently say he is an exceptional
-                    <b>Java</b> and <b>Spring Boot</b> developer. His ability to
-                    write clean, efficient code and solve complex problems with
-                    ease is truly impressive. He's a reliable team player who
-                    consistently delivers high-quality results. Any team would
-                    be lucky to have him!
-                  </p>
-                </div>
-              </div>
-            </section>
+            <h3 class="h3">Experience</h3>
           </div>
 
-          <!--- clients -->
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">eMudhra Digital Campus,
+                <span style="display: inline;margin-left: 8px;font-weight: bold;">2021 - Present </span>
+              </h4>
 
-          <section class="clients">
-            <h3 class="h3 clients-title">Company</h3>
+              <span>Senior Software Developer</span>
 
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="https://emudhra.com" target="_blank">
-                  <img
-                    src="./assets/images/emudhraLogo.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
+              <p class="timeline-text">
+                Design and implement scalable solutions using microservices and three-tier architecture.
+                Develop high-performance, advanced APIs and backend services with Spring Boot following industry best
+                practices and high coding standards.<br>
+                Work extensively with PostgreSQL for data management and optimization.
+              </p><span>Software Developer</span>
+              <p class="timeline-text">
+                Developed SDKs and APIs for integration with client systems.
+                Worked on advanced Java, Servlets, and JDBC for backend application development in a monolithic
+                architecture.<br>
+                Managed MySQL databases, ensuring efficient queries and data integrity.
+              </p><span>Associate Software Developer</span>
+              <p class="timeline-text">
+                Built demo projects using Spring Boot and Hibernate to showcase solutions to potential clients.<br>
+                Participated in client interactions to gather requirements and present project capabilities.
+              </p><span>Junior Testing Engineer (Software Testing)</span>
+              <p class="timeline-text">
+                IPerformed API testing and automated functional testing for web portals using Selenium.
+              </p>
+            </li>
 
-              <li class="clients-item">
-                <a href="https://www.wistron.com/en" target="_blank">
-                  <img src="./assets/images/wistron.svg" alt="client logo" />
-                </a>
-              </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Wistron,
+                <span style="display: inline;margin-left: 8px;font-weight: bold;">2020 — 2021</span>
+              </h4>
+              <span>Junior Testing Engineer (Hardware Testing)</span>
+              <p class="timeline-text">
+                Assembled and configured hardware testing machines for iPhone component evaluation.
+                Conducted physical assembly and quality checks of iPhone devices to ensure compliance with Apple’s
+                manufacturing standards.
+              </p>
+            </li>
 
-              <!-- <li class="clients-item">
+            <!-- <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2010 — 2013</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li> -->
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                GITAM school of technology
+              </h4>
+
+              <span>2016 — 2020</span>
+
+              <p class="timeline-text">
+                Throughout my years at GITAM, I immersed myself in a dynamic
+                learning environment, surrounded by dedicated faculty and
+                talented peers.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Sri Chaitanya PU college</h4>
+
+              <span>2014 — 2016</span>
+
+              <p class="timeline-text">
+                During my time at Sri Chaitanya PU College, I thrived in a
+                vibrant academic setting, learning alongside passionate
+                educators and accomplished peers.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Sri Chaitanya Techno school
+              </h4>
+
+              <span>2002 — 2004</span>
+
+              <p class="timeline-text">
+                At Sri Chaitanya Techno School, I flourished in a stimulating
+                academic environment, guided by dedicated teachers.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!--- clients -->
+
+        <section class="clients">
+          <h3 class="h3 clients-title">Workplaces</h3>
+
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="https://emudhra.com" target="_blank">
+                <img src="./assets/images/emudhraLogo.png" alt="client logo" />
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="https://www.wistron.com/en" target="_blank">
+                <img src="./assets/images/wistron.svg" alt="client logo" />
+              </a>
+            </li>
+
+            <!-- <li class="clients-item">
                 <a href="#">
                   <img
                     src="./assets/images/logo-3-color.png"
@@ -546,123 +644,19 @@
                   />
                 </a>
               </li> -->
-            </ul>
-          </section>
-        </article>
+          </ul>
+        </section>
 
-        <!--- #RESUME -->
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
+      </article>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">eMudhra Digital</h4>
-
-                <span>2021 — Present</span>
-
-                <p class="timeline-text">
-                  In my role as a Software Developer for eMudhra, I am
-                  responsible for developing and maintaining the Web
-                  Applications and API's.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Wistron</h4>
-
-                <span>2020 — 2022</span>
-
-                <p class="timeline-text">
-                  As a Testing Engineer at Wistron, I specialize in designing
-                  and building testing machines for iPhone evaluation.
-                </p>
-              </li>
-
-              <!-- <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li> -->
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  GITAM school of technology
-                </h4>
-
-                <span>2016 — 2020</span>
-
-                <p class="timeline-text">
-                  Throughout my years at GITAM, I immersed myself in a dynamic
-                  learning environment, surrounded by dedicated faculty and
-                  talented peers.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Sri Chaitanya PU college</h4>
-
-                <span>2014 — 2016</span>
-
-                <p class="timeline-text">
-                  During my time at Sri Chaitanya PU College, I thrived in a
-                  vibrant academic setting, learning alongside passionate
-                  educators and accomplished peers.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Sri Chaitanya Techno school
-                </h4>
-
-                <span>2002 — 2004</span>
-
-                <p class="timeline-text">
-                  At Sri Chaitanya Techno School, I flourished in a stimulating
-                  academic environment, guided by dedicated teachers.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          
-
-          <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
-
-            <ul class="skills-list content-card">
-              <!-- <li class="skills-item">
+      <article class="portfolio" data-page="skills">
+        <header>
+          <h2 class="h2 article-title">skills</h2>
+        </header>
+        <section class="skill">
+          <ul>
+            <!-- <ul class="skills-list content-card"> -->
+            <!-- <li class="skills-item">
 
               <div class="title-wrapper">
                 <h5 class="h5">Java</h5>
@@ -678,7 +672,7 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web development</h5>
+                <h5 class="h5">eMudhra</h5>
                 <data value="70">70%</data>
               </div>
 
@@ -714,262 +708,309 @@
 
             </li> -->
 
-              <div class="skill-icons">
-                <img
-                  src="https://skillicons.dev/icons?i=java"
-                  alt="Java"
-                  class="skill-icon"
-                  title="Java"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=spring"
-                  alt="Spring"
-                  class="skill-icon"
-                  title="Spring"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=python"
-                  alt="Python"
-                  class="skill-icon"
-                  title="python"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=html"
-                  alt="HTML"
-                  class="skill-icon"
-                  title="HTML"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=css"
-                  alt="CSS"
-                  class="skill-icon"
-                  title="CSS"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=js"
-                  alt="JavaScript"
-                  class="skill-icon"
-                  title="Javascript"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=jquery"
-                  alt="jQuery"
-                  class="skill-icon"
-                  title="jQuery"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=nodejs"
-                  alt="Node.js"
-                  class="skill-icon"
-                  title="Node.js"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=cs"
-                  alt="CSharp"
-                  class="skill-icon"
-                  title="CSharp"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=mysql"
-                  alt="MySQL"
-                  class="skill-icon"
-                  title="MySQL"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=hibernate"
-                  alt="Hibernate"
-                  class="skill-icon"
-                  title="Hibernate"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=postman"
-                  alt="Postman"
-                  class="skill-icon"
-                  title="Postman"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=linux"
-                  alt="Linux"
-                  class="skill-icon"
-                  title="Linux"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=git"
-                  alt="Git"
-                  class="skill-icon"
-                  title="Git"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=github"
-                  alt="GitHub"
-                  class="skill-icon"
-                  title="GitHub"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=azure"
-                  alt="Azure"
-                  class="skill-icon"
-                  title="Azure"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=vscode"
-                  alt="VS Code"
-                  class="skill-icon"
-                  title="VS Code"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=idea"
-                  alt="IntelliJ IDEA"
-                  class="skill-icon"
-                  title="IntelliJ IDEA"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=arduino"
-                  alt="Arduino"
-                  class="skill-icon"
-                  title="Arduino"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=md"
-                  alt="md"
-                  class="skill-icon"
-                  title="MarkDown"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=maven"
-                  alt="Maven"
-                  class="skill-icon"
-                  title="Maven"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=notion"
-                  alt="Notion"
-                  class="skill-icon"
-                  title="Notion"
-                />
-                <img
-                  src="https://skillicons.dev/icons?i=raspberrypi"
-                  alt="raspberrypi"
-                  class="skill-icon"
-                  title="Raspberry Pi"
-                />
-              </div>
-            </ul>
-          </section>
-        </article>
-
-        <!--- #PORTFOLIO -->
-        <article class="portfolio" data-page="projects">
-          <header>
-            <h2 class="h2 article-title">Projects</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item" style="display:none">
-                <button data-filter-btn>Web design</button>
-              </li>
-
-              <li class="filter-item" style="display:none">
-                <button data-filter-btn>Applications</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item" style="display: none;">
-                  <button data-select-item>Web design</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
+            <div class="skill-icons">
+              <img src="https://skillicons.dev/icons?i=java" alt="Java" class="skill-icon" title="Java" />
+              <img src="https://skillicons.dev/icons?i=spring" alt="Spring" class="skill-icon" title="Spring" />
+              <img src="https://skillicons.dev/icons?i=python" alt="Python" class="skill-icon" title="python" />
+              <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="skill-icon" title="HTML" />
+              <img src="https://skillicons.dev/icons?i=css" alt="CSS" class="skill-icon" title="CSS" />
+              <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" class="skill-icon" title="Javascript" />
+              <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery" class="skill-icon" title="jQuery" />
+              <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="skill-icon" title="Node.js" />
+              <img src="https://skillicons.dev/icons?i=cs" alt="CSharp" class="skill-icon" title="CSharp" />
+              <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL" class="skill-icon" title="MySQL" />
+              <img src="https://skillicons.dev/icons?i=hibernate" alt="Hibernate" class="skill-icon"
+                title="Hibernate" />
+              <img src="https://skillicons.dev/icons?i=postman" alt="Postman" class="skill-icon" title="Postman" />
+              <img src="https://skillicons.dev/icons?i=linux" alt="Linux" class="skill-icon" title="Linux" />
+              <img src="https://skillicons.dev/icons?i=git" alt="Git" class="skill-icon" title="Git" />
+              <img src="https://skillicons.dev/icons?i=github" alt="GitHub" class="skill-icon" title="GitHub" />
+              <img src="https://skillicons.dev/icons?i=azure" alt="Azure" class="skill-icon" title="Azure" />
+              <img src="https://skillicons.dev/icons?i=vscode" alt="VS Code" class="skill-icon" title="VS Code" />
+              <img src="https://skillicons.dev/icons?i=idea" alt="IntelliJ IDEA" class="skill-icon"
+                title="IntelliJ IDEA" />
+              <img src="https://skillicons.dev/icons?i=arduino" alt="Arduino" class="skill-icon" title="Arduino" />
+              <img src="https://skillicons.dev/icons?i=md" alt="md" class="skill-icon" title="MarkDown" />
+              <img src="https://skillicons.dev/icons?i=maven" alt="Maven" class="skill-icon" title="Maven" />
+              <img src="https://skillicons.dev/icons?i=notion" alt="Notion" class="skill-icon" title="Notion" />
+              <img src="https://skillicons.dev/icons?i=raspberrypi" alt="raspberrypi" class="skill-icon"
+                title="Raspberry Pi" />
             </div>
+          </ul>
+        </section>
+      </article>
 
-            <ul class="project-list">
-              <li
+      <!--- #PORTFOLIO -->
+      <article class="portfolio" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item" style="display:none">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>eMudhra</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>personal</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>
+                Select category
+              </div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item" style="display: none;">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>eMudhra</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>personal</button>
+              </li>
+
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="emudhra">
+              <a href="https://instigo-qa.emsigner.com/InstigoV2/testdp" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/instigo.png" alt="arrival" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title">Insitgo NDML prodect for Demat & Trading, KYC enrolments</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  SpringBoot | Javascript | JQuery | JDBC</span>
+
+                <p class="project-category">
+                   Insitgo NDML is an all-in-one platform for managing Demat and Trading accounts, streamlining KYC enrolments, and delivering a seamless user experience throughout the KYC process.  
+                </p>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="emudhra">
+              <a href="https://kyc-qa.emsigner.com/test" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/kycSystems.png" alt="orizon" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title">Kyc Systems</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  SpringBoot | Javascript | JQuery | JDBC</span>
+
+                <p class="project-category">
+                  KYC Systems simplifies the KYC verification by utilizing services such as Aadhaar, DigiLocker,
+                  and PAN for Indian users, along with Veridas and eID for users worldwide.</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="emudhra">
+              <a href="https://qaserver-int.emudhra.net:18004/eMudhraDemos/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/eMudhraDemos.png" alt="eSign" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title" style="font: bold;">eSign</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  SpringBoot | Javascript | JQuery | JDBC</span>
+
+                <p class="project-category" style="margin-top: 7px;">
+                  eSign is a comprehensive digital signature solution that
+                  enables users to sign documents electronically, ensuring
+                  security and authenticity. It supports various document
+                  formats and integrates seamlessly with existing workflows.
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="emudhra">
+              <a href="https://qaserver-int.emudhra.net:18004/SignatureAppearances/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/SignatureAppearances.png" alt="summary" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title">PDF Digital Signatures</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  SpringBoot | Javascript | JQuery | JDBC | iTextPdf</span>
+
+                <p class="project-category">
+                  PDF Digital Signatures is a robust solution for managing digital signatures in PDF documents,
+                  ensuring authenticity and integrity. It supports various signature formats and integrates with
+                  existing workflows.</p>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="emudhra">
+              <a href="https://qaserver-int.emudhra.net:18004/pdfviewdemo/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/pdfviewdemo.png" alt="arrival" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title">PDF Viewer</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  Javascript | JQuery | JDBC</span>
+
+                <p class="project-category">
+                  PDF Viewer is a versatile tool for viewing and interacting with PDF documents, supporting various
+                  features like zoom, search, and annotation. It integrates seamlessly with existing systems.</p>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="emudhra">
+              <a href="https://qaserver-int.emudhra.net:18004/G20PilotDemo/index" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/G20PilotDemo.png" alt="arrival" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title">G20 Pilot</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  SpringBoot | Javascript | JQuery | iTextPdf</span>
+
+                <p class="project-category">
+                  The G20 Pilot is a cross-border digital signature platform integrating with TSPs from India, Japan,
+                  and the EU, showcasing mutual recognition of digital signatures.</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="emudhra">
+              <a href="https://qaserver-int.emudhra.net:18004/SbiDemo/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/SbiDemo.png" alt="arrival" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title">eSign SBI</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  SpringBoot | Javascript | JQuery </span>
+
+                <p class="project-category">
+                  eSign SBI Demo is a demonstration of the eSign service integrated with the State Bank of India,
+                  showcasing the capabilities of digital signatures in banking transactions.</p>
+                </p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="personal">
+              <a href="https://file-encrpyt-handler.vercel.app" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img class="projimgs" src="./assets/images/file-handler.png" alt="arrival" loading="lazy" />
+                </figure>
+
+                <h4 class="project-title">File Handler with webhook api in backend, frontend form post file</h4>
+
+                <span class="project-category"
+                  style="color: var(--orange-yellow-crayola);font-size:14px;margin-top: 5px;">Java |
+                  SpringBoot | Javascript | JQuery</span>
+
+                <p class="project-category">
+                  File Handler is a versatile system for uploading, managing, and processing files via webhook API or frontend forms, supporting multiple formats and seamless integration with existing systems.
+                  </p>
+                </p>
+              </a>
+            </li>
+
+            <!-- <li
                 class="project-item active"
                 data-filter-item
-                data-category="web development"
+                data-category="applications"
               >
-                <a
-                  href="https://qaserver-int.emudhra.net:18004/eMudhraDemos/"
-                  target="_blank"
-                >
+                <a href="#">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
 
-                    <img class="projimgs"
-                      src="./assets/images/eMudhraDemos.png"
-                      alt="eSign"
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
                       loading="lazy"
                     />
                   </figure>
 
-                  <h3 class="project-title">eSign</h3>
+                  <h3 class="project-title">Task Manager</h3>
 
-                  <p class="project-category">Web development</p>
+                  <p class="project-category">Applications</p>
                 </a>
-              </li>
+              </li> -->
 
-              <li
+            <!-- <li
                 class="project-item active"
                 data-filter-item
-                data-category="web development"
-              >
-                <a href="https://kyc-qa.emsigner.com/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img class="projimgs"
-                      src="./assets/images/kycSystems.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Kyc Systems</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <!-- <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
+                data-category="web design">
                 <a href="#">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
@@ -992,8 +1033,7 @@
               <li
                 class="project-item active"
                 data-filter-item
-                data-category="applications"
-              >
+                data-category="applications">
                 <a href="#">
                   <figure class="project-img">
                     <div class="project-item-icon-box">
@@ -1061,151 +1101,28 @@
                 </a>
               </li> -->
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://qaserver-int.emudhra.net:18004/SignatureAppearances/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+          </ul>
+        </section>
+      </article>
 
-                    <img class="projimgs"
-                      src="./assets/images/SignatureAppearances.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
+      <!--- #BLOG -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
 
-                  <h3 class="project-title">PDF Digital Signatures</h3>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a target="_blank"
+                href="https://bsabhishek.notion.site/Learning-Hub-ace3e3aa8d1f401bb681c70053e8609d?pvs=4">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Knowledge.gif" alt="Best fonts every designer" loading="lazy"
+                    id="gifImage1" />
+                </figure>
 
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <!-- <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li> -->
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://qaserver-int.emudhra.net:18004/pdfviewdemo/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img class="projimgs"
-                      src="./assets/images/pdfviewdemo.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">PDF Viewer</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://qaserver-int.emudhra.net:18004/G20PilotDemo/index" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img class="projimgs"
-                      src="./assets/images/G20PilotDemo.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">G20 Pilot</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="https://qaserver-int.emudhra.net:18004/SbiDemo/" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img class="projimgs"
-                      src="./assets/images/SbiDemo.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">eSign SBI</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-            </ul>
-          </section>
-        </article>
-
-        <!--- #BLOG -->
-        <article class="blog" data-page="blog">
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
-          </header>
-
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a target="_blank" href="https://bsabhishek.notion.site/Learning-Hub-ace3e3aa8d1f401bb681c70053e8609d?pvs=4">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/Knowledge.gif"
-                      alt="Best fonts every designer"
-                      loading="lazy"
-                      id="gifImage1"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <!-- <div class="blog-meta">
+                <div class="blog-content">
+                  <!-- <div class="blog-meta">
                       <p class="blog-category">Design</p>
 
                       <span class="dot"></span>
@@ -1213,30 +1130,25 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div> -->
 
-                    <h3 class="h3 blog-item-title">
-                      Learning Hub
-                    </h3>
+                  <h3 class="h3 blog-item-title">
+                    Learning Hub
+                  </h3>
 
-                    <p class="blog-text">
-                      “Empowering Minds: Your Gateway to Knowledge and Growth”.
-                    </p>
-                  </div>
-                </a>
-              </li>
+                  <p class="blog-text">
+                    “Empowering Minds: Your Gateway to Knowledge and Growth”.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-             <li class="blog-post-item">
-                <a target="_blank" href="https://abhishekbestha.vercel.app">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/Portfolio.gif"
-                      alt="Design digest #80"
-                      loading="lazy"
-                      id="gifImage2"
-                    />
-                  </figure>
+            <li class="blog-post-item">
+              <a target="_blank" href="https://abhishekbestha.vercel.app">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Portfolio.gif" alt="Design digest #80" loading="lazy" id="gifImage2" />
+                </figure>
 
-                  <div class="blog-content">
-                   <!-- <div class="blog-meta">
+                <div class="blog-content">
+                  <!-- <div class="blog-meta">
                       <p class="blog-category">Design</p>
 
                       <span class="dot"></span>
@@ -1244,28 +1156,25 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div> -->
 
-                    <h3 class="h3 blog-item-title">My Portfolio</h3>
+                  <h3 class="h3 blog-item-title">My Portfolio</h3>
 
-                    <p class="blog-text">
-                      Portfolio based on html, css, js.
-                    </p>
-                  </div>
-                </a>
-              </li>
+                  <p class="blog-text">
+                    Portfolio based on html, css, js.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-              <li class="blog-post-item">
-                <a target="_blank" href="https://bsabhishek.notion.site/Welcome-to-Abhishek-Blog-46a11d55134f44b2838ae55cd5782a5c?pvs=4">
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/NotionBlog.gif"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                      id="gifImage3"
-                    />
-                  </figure>
+            <li class="blog-post-item">
+              <a target="_blank"
+                href="https://bsabhishek.notion.site/Welcome-to-Abhishek-Blog-46a11d55134f44b2838ae55cd5782a5c?pvs=4">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/NotionBlog.gif" alt="Design conferences in 2022" loading="lazy"
+                    id="gifImage3" />
+                </figure>
 
-                  <div class="blog-content">
-                    <!-- <div class="blog-meta">
+                <div class="blog-content">
+                  <!-- <div class="blog-meta">
                       <p class="blog-category">Design</p>
 
                       <span class="dot"></span>
@@ -1273,18 +1182,18 @@
                       <time datetime="2022-02-23">Fab 23, 2022</time>
                     </div> -->
 
-                    <h3 class="h3 blog-item-title">
-                      Notion blog
-                    </h3>
+                  <h3 class="h3 blog-item-title">
+                    Notion blog
+                  </h3>
 
-                    <p class="blog-text">
-                      My blog page by notion.
-                    </p>
-                  </div>
-                </a>
-              </li>
+                  <p class="blog-text">
+                    My blog page by notion.
+                  </p>
+                </div>
+              </a>
+            </li>
 
-              <!-- <li class="blog-post-item">
+            <!-- <li class="blog-post-item">
                 <a href="#">
                   <figure class="blog-banner-box">
                     <img
@@ -1374,85 +1283,55 @@
                   </div>
                 </a>
               </li> -->
-            </ul>
-          </section>
-        </article>
+          </ul>
+        </section>
+      </article>
 
-        <!--- #CONTACT -->
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
+      <!--- #CONTACT -->
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
 
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2442.037176797343!2d77.62586146670158!3d13.122928322113243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1731695942350!5m2!1sen!2sin"
-                width="400"
-                height="300"
-                loading="lazy"
-              ></iframe>
-            </figure>
-          </section>
+        <section class="mapbox" data-mapbox style="display: none;">
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2442.037176797343!2d77.62586146670158!3d13.122928322113243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1731695942350!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
 
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
 
-            <form
-              action="https://formspree.io/f/xqknqjnl"
-              method="post"
-              class="form"
-              data-form
-            >
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
+          <form action="https://formspree.io/f/xqknqjnl" method="post" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input />
 
-                <input
-                  type="email"
-                  name="mail"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
+              <input type="email" name="mail" class="form-input" placeholder="Email address" required data-form-input />
+            </div>
 
-              <textarea
-                name="Message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
+            <textarea name="Message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
-        </article>
-      </div>
-    </main>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+        <p class="contact-text" style="display: flex;justify-content: center;color: white;margin-top: 140px;">
+          © 2025 Abhishek BS. Bangalore, India.
+        </p>
+      </article>
+    </div>
+  </main>
 
-    <!--- custom js link -->
-    <script src="./assets/js/script.js"></script>
+  <!--- custom js link -->
+  <script src="./assets/js/script.js"></script>
 
-    <!--- ionicon link -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  <!--- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

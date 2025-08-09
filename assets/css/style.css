@@ -1,27 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -447,6 +424,16 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
+#typewriter {
+  min-height: 25px;
+  display: flex;
+  font-family: cursive;
+  white-space: nowrap;
+  overflow: hidden;
+  width: fit-content;
+  animation: blink-caret 0.75s step-end infinite;
+  font-size: medium;
+}
 
 
 
@@ -556,11 +543,81 @@ main {
 }
 
 
+.github-contribution,
+.service-item,
+.title-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.github-chart {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.article-title {
+  margin-bottom: 30px;
+}
+.timeline {
+  margin-bottom: 30px;
+}
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.timeline-list {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+.timeline-item {
+  position: relative;
+}
+.timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.timeline-item-title {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+.timeline-list span {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.6;
+}
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--jet);
+}
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: var(--text-gradient-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--jet);
+}
+.timeline-text {
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
 /**
  * #testimonials 
  */
 
-.testimonials { margin-bottom: 30px; }
+.testimonials { margin-top: 30px; }
 
 .testimonials-title { margin-bottom: 20px; }
 
@@ -830,6 +887,7 @@ main {
   color: var(--light-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+  margin-bottom: 10px;
 }
 
 
@@ -1399,12 +1457,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: flex-start;
     align-items: flex-start;
     gap: 18px;
-    padding: 30px;
+    padding: 20px;
   }
 
   .service-icon-box {
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
   .service-content-box { text-align: left; }
@@ -1504,7 +1562,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
 
-
+  .download-link:hover {
+  color: var(--orange-yellow-crayola);
+  transform: scale(1.2);
+}
+.download-link {
+    display: inline-block;
+    margin-left: 10px;
+    color: var(--white-2);
+    font-size: 18px;
+    vertical-align: middle;
+    position: relative;
+    text-decoration: none;
+    transition: color var(--transition-1), transform var(--transition-1);
+}
 
   /**
    * #PORTFOLIO, BLOG
@@ -1932,13 +2003,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 /* Social list styles */
 .social-list {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 4px;
+    padding-left: 7px;
 }
 
 /* Social link styles */
@@ -1971,6 +2040,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Hover effects */
 .social-link:hover i {
   opacity: 0.8;
+}
+
+.skill-icon:hover,
+.social-item:hover {
+  transform: scale(1.5);
 }
 
 /* Responsive design */
@@ -2013,5 +2087,20 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media screen and (max-width: 360px) {
   .projimgs {
     height: 100px; /* Further reduce height */
+  }
+}
+
+@media (max-width: 600px) {
+  .download-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px; /* space between text and icon */
+    width: fit-content;
+  }
+  .download-icon {
+    order: 2;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
