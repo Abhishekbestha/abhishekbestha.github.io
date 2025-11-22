@@ -1,0 +1,101 @@
+[
+    {
+        "title": "LankaPay",
+        "image": "./assets/images/lankapay.png",
+        "link": "https://appra.emudhra.com/LankaPayDigital/",
+        "tags": [
+            "Java",
+            "Spring Boot",
+            "JDBC"
+        ],
+        "description": "LankaPay enables seamless digital signature and KYC enrollment for secure, paperless onboarding and compliance. Users can quickly purchase eSign products and complete KYC digitally for instant activation and trusted online transactions."
+    },
+    {
+        "title": "Instigo",
+        "image": "./assets/images/instigo.png",
+        "link": "https://instigo-qa.emsigner.com/InstigoV2/testdp",
+        "tags": [
+            "Java",
+            "Spring Boot",
+            "JDBC"
+        ],
+        "description": "Instigo NDML is an all-in-one platform for managing Demat and Trading accounts, streamlining KYC enrolments, and delivering a seamless user experience."
+    },
+    {
+        "title": "KYC Systems",
+        "image": "./assets/images/kycSystems.png",
+        "link": "https://kyc-qa.emsigner.com/test",
+        "tags": [
+            "Java",
+            "Spring Boot",
+            "Microservices"
+        ],
+        "description": "Simplifies KYC verification by utilizing services such as Aadhaar, DigiLocker, and PAN for Indian users, along with Veridas and eID for users worldwide."
+    },
+    {
+        "title": "eSign",
+        "image": "./assets/images/eMudhraDemos.png",
+        "link": "https://qaserver-int.emudhra.net:18004/eMudhraDemos/",
+        "tags": [
+            "Java",
+            "Spring Boot",
+            "Security"
+        ],
+        "description": "Comprehensive digital signature solution enabling users to sign documents electronically, ensuring security and authenticity."
+    },
+    {
+        "title": "PDF Digital Signatures",
+        "image": "./assets/images/SignatureAppearances.png",
+        "link": "https://qaserver-int.emudhra.net:18004/SignatureAppearances/",
+        "tags": [
+            "Java",
+            "iTextPdf",
+            "Security"
+        ],
+        "description": "Robust solution for managing digital signatures in PDF documents, ensuring authenticity and integrity."
+    },
+    {
+        "title": "PDF Viewer",
+        "image": "./assets/images/pdfviewdemo.png",
+        "link": "https://qaserver-int.emudhra.net:18004/pdfviewdemo/",
+        "tags": [
+            "Java",
+            "jQuery",
+            "Viewer"
+        ],
+        "description": "Versatile tool for viewing and interacting with PDF documents, supporting zoom, search, and annotation."
+    },
+    {
+        "title": "G20 Pilot",
+        "image": "./assets/images/G20PilotDemo.png",
+        "link": "https://qaserver-int.emudhra.net:18004/G20PilotDemo/index",
+        "tags": [
+            "Java",
+            "Cross-border",
+            "Signatures"
+        ],
+        "description": "Cross-border digital signature platform integrating with TSPs from India, Japan, and the EU."
+    },
+    {
+        "title": "eSign SBI",
+        "image": "./assets/images/SbiDemo.png",
+        "link": "https://qaserver-int.emudhra.net:18004/SbiDemo/",
+        "tags": [
+            "Java",
+            "Banking",
+            "Integration"
+        ],
+        "description": "Demonstration of the eSign service integrated with the State Bank of India for banking transactions."
+    },
+    {
+        "title": "File Handler",
+        "image": "./assets/images/file-handler.png",
+        "link": "https://file-encrpyt-handler.vercel.app",
+        "tags": [
+            "Java",
+            "Personal",
+            "Utility"
+        ],
+        "description": "Versatile system for uploading, managing, and processing files via webhook API or frontend forms."
+    }
+]

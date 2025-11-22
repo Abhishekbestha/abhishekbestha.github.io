@@ -1,0 +1,44 @@
+[
+    {
+        "period": "2021 - Present",
+        "role": "Senior Software Developer",
+        "company": "eMudhra Digital Campus",
+        "description": [
+            "Design and implement scalable solutions using microservices and three-tier architecture.",
+            "Develop high-performance, advanced APIs and backend services with Spring Boot following industry best practices.",
+            "Work extensively with PostgreSQL for data management and optimization."
+        ],
+        "subRoles": [
+            {
+                "role": "Software Developer",
+                "description": [
+                    "Developed SDKs and APIs for integration with client systems.",
+                    "Worked on advanced Java, Servlets, and JDBC for backend application development in a monolithic architecture.",
+                    "Managed MySQL databases, ensuring efficient queries and data integrity."
+                ]
+            },
+            {
+                "role": "Associate Software Developer",
+                "description": [
+                    "Built demo projects using Spring Boot and Hibernate to showcase solutions to potential clients.",
+                    "Participated in client interactions to gather requirements and present project capabilities."
+                ]
+            },
+            {
+                "role": "Junior Testing Engineer",
+                "description": [
+                    "Performed API testing and automated functional testing for web portals using Selenium."
+                ]
+            }
+        ]
+    },
+    {
+        "period": "2020 - 2021",
+        "role": "Junior Testing Engineer (Hardware)",
+        "company": "Wistron",
+        "description": [
+            "Assembled and configured hardware testing machines for iPhone component evaluation.",
+            "Conducted physical assembly and quality checks of iPhone devices to ensure compliance with Apple’s standards."
+        ]
+    }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "category": "Backend",
+        "skills": [
+            {
+                "name": "Java",
+                "icon": "https://skillicons.dev/icons?i=java"
+            },
+            {
+                "name": "Spring",
+                "icon": "https://skillicons.dev/icons?i=spring"
+            },
+            {
+                "name": "Node.js",
+                "icon": "https://skillicons.dev/icons?i=nodejs"
+            },
+            {
+                "name": "Python",
+                "icon": "https://skillicons.dev/icons?i=python"
+            },
+            {
+                "name": "C#",
+                "icon": "https://skillicons.dev/icons?i=cs"
+            },
+            {
+                "name": "Hibernate",
+                "icon": "https://skillicons.dev/icons?i=hibernate"
+            }
+        ]
+    },
+    {
+        "category": "Frontend",
+        "skills": [
+            {
+                "name": "HTML",
+                "icon": "https://skillicons.dev/icons?i=html"
+            },
+            {
+                "name": "CSS",
+                "icon": "https://skillicons.dev/icons?i=css"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "https://skillicons.dev/icons?i=js"
+            },
+            {
+                "name": "jQuery",
+                "icon": "https://skillicons.dev/icons?i=jquery"
+            }
+        ]
+    },
+    {
+        "category": "Database",
+        "skills": [
+            {
+                "name": "MySQL",
+                "icon": "https://skillicons.dev/icons?i=mysql"
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "https://skillicons.dev/icons?i=postgres"
+            }
+        ]
+    },
+    {
+        "category": "Tools & DevOps",
+        "skills": [
+            {
+                "name": "Git",
+                "icon": "https://skillicons.dev/icons?i=git"
+            },
+            {
+                "name": "GitHub",
+                "icon": "https://skillicons.dev/icons?i=github"
+            },
+            {
+                "name": "Azure",
+                "icon": "https://skillicons.dev/icons?i=azure"
+            },
+            {
+                "name": "Linux",
+                "icon": "https://skillicons.dev/icons?i=linux"
+            },
+            {
+                "name": "Maven",
+                "icon": "https://skillicons.dev/icons?i=maven"
+            },
+            {
+                "name": "Postman",
+                "icon": "https://skillicons.dev/icons?i=postman"
+            },
+            {
+                "name": "VS Code",
+                "icon": "https://skillicons.dev/icons?i=vscode"
+            },
+            {
+                "name": "IntelliJ",
+                "icon": "https://skillicons.dev/icons?i=idea"
+            }
+        ]
+    },
+    {
+        "category": "AI & Tools",
+        "skills": [
+            {
+                "name": "Claude Code",
+                "ionIcon": "code-slash-outline"
+            },
+            {
+                "name": "GitHub Copilot",
+                "ionIcon": "logo-github"
+            },
+            {
+                "name": "Gemini CLI",
+                "ionIcon": "terminal-outline"
+            },
+            {
+                "name": "Google AI Studio",
+                "ionIcon": "logo-google"
+            },
+            {
+                "name": "OpenCode",
+                "ionIcon": "code-working-outline"
+            },
+            {
+                "name": "Perplexity",
+                "ionIcon": "search-outline"
+            }
+        ]
+    },
+    {
+        "category": "Others",
+        "skills": [
+            {
+                "name": "Arduino",
+                "icon": "https://skillicons.dev/icons?i=arduino"
+            },
+            {
+                "name": "RPi",
+                "icon": "https://skillicons.dev/icons?i=raspberrypi"
+            },
+            {
+                "name": "Notion",
+                "icon": "https://skillicons.dev/icons?i=notion"
+            },
+            {
+                "name": "Markdown",
+                "icon": "https://skillicons.dev/icons?i=md"
+            }
+        ]
+    }
+]
